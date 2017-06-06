@@ -10,18 +10,18 @@ module.exports = {
 		var month = createdAt.getMonth()
 		var hour = createdAt.getHours()
 		var minute = createdAt.getMinutes() + 1
+		var second = createdAt.getSeconds()
 
-		new CronJob(`0 ${minute} ${hour} ${day} ${month} *`, function() {
+		new CronJob(`${second} ${minute} ${hour} ${day} ${month} *`, function() {
 
 			var job = queue.create('email', {
 			    subject: 'welcome email for DyK',
 			    message: `Hi ${response.name}, Ini email baru dari Dyan Kastutara, Oke Kan?`,
 			    to : response.email
 				})
-				.save( function(err){
+				.save(function(err){
 				   if( !err ) console.log("Cron job sukses", job.id );
-				})
-			}, null, true, 'Asia/Jakarta');
+				});
 
 			queue.process('email', function(job, done){
 		  	email(job.data, done);
@@ -57,5 +57,6 @@ module.exports = {
 				    return done()
 				});
 			}
+		}, null, true, 'Asia/Jakarta');
 	}
 }
