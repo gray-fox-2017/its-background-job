@@ -1,0 +1,24 @@
+{
+  "name": "its-background-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uciarahito/its-background-job.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uciarahito/its-background-job/issues"
+  },
+  "homepage": "https://github.com/uciarahito/its-background-job#readme",
+  "dependencies": {
+    "cron": "^1.2.1",
+    "kue": "^0.11.6",
+    "mailgun-js": "^0.11.2"
+  }
+}
