@@ -1,0 +1,36 @@
+{
+  "name": "its-background-job",
+  "version": "1.0.0",
+  "description": "background job and queue practice anchor",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakiemaul/its-background-job.git"
+  },
+  "keywords": [
+    "cron",
+    "kue",
+    "express"
+  ],
+  "author": "hakiemaul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakiemaul/its-background-job/issues"
+  },
+  "homepage": "https://github.com/hakiemaul/its-background-job#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "cron": "^1.2.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "kue": "^0.11.6",
+    "mongoose": "^4.10.4",
+    "nodemailer": "^4.0.1",
+    "validator": "^7.0.0"
+  }
+}
