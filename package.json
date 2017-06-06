@@ -1,0 +1,29 @@
+{
+  "name": "its-background-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingelieur/its-background-job.git"
+  },
+  "author": "Shabrina V. Inmas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingelieur/its-background-job/issues"
+  },
+  "homepage": "https://github.com/ingelieur/its-background-job#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cron": "^1.2.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "kue": "^0.11.6",
+    "nodemon": "^1.11.0",
+    "oauth": "^0.9.15",
+    "unirest": "^0.5.1"
+  }
+}
