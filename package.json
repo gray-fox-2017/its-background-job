@@ -1,0 +1,35 @@
+{
+  "name": "its-background-job",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.2.1",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "kue": "^0.11.6",
+    "moment": "^2.18.1",
+    "morgan": "~1.8.1",
+    "nodemon": "^1.11.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "description": "background job",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulfikarannur/its-background-job.git"
+  },
+  "author": "zulfikarannur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zulfikarannur/its-background-job/issues"
+  },
+  "homepage": "https://github.com/zulfikarannur/its-background-job#readme"
+}
