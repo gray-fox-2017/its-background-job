@@ -23,8 +23,8 @@ new CronJob('0 46 04 7 5 *', function() {
 
     queue.process('sms', function(job, done){
       var data = JSON.stringify({
-        api_key: 'e07e9571',
-        api_secret: '4bf098633d81f485',
+        api_key: 'your_api_key',
+        api_secret: 'your_api_secret',
         to: job.data.phone,
         from: '441632960961',
         text: job.data.text
